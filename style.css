@@ -1,21 +1,58 @@
-:root {
-    --sky-dark: #05092a;
-    --sky-bright: #5071b8;
-}
-
 
 html {
+    --sky-dark: null;
+    --sky-bright: null;
+    --font-color: null;
     background-color: var(--sky-dark);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    image-rendering: crisp-edges;
+    color: var(--font-color);
+    font-size: 22px;
 }
 
 
 header {
+    background-color: var(--sky-dark);
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.lang {
+    height: 8vh;
+    padding-right: 10px;
+}
+
+.nav-link {
+    font-size: 24px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-icon {
+    height: 64px;
+}
+
+.dark-mode-toggle {
+    background-image: url("img/dark_mode.png");
+    border: none;
+    background-color: transparent;
+    width: 120px;
+    height: 60px;
+    margin-right: 100px;
+}
+
+.sky {
     background-image: linear-gradient(var(--sky-dark), var(--sky-bright));
     height: 40vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
+
 
 .name {
     display: flex;
@@ -24,20 +61,59 @@ header {
     font-size: 56px;
     color: white;
     text-shadow: 3px 3px 0 var(--sky-dark);
+    padding-left: 10vw;
 }
 
+.content-bright {
+    background-color: var(--sky-bright);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5vh;
+}
+
+.content-dark {
+    background-color: var(--sky-dark);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: right;
+    padding-right: 5vh;
+}
+
+.content-img {
+    width: 256px;
+}
+
+.bright-dark-transition {
+    background-image: linear-gradient(var(--sky-bright), var(--sky-dark));
+    height: 5vh;
+}
+
+.dark-bright-transition {
+    background-image: linear-gradient(var(--sky-dark), var(--sky-bright));
+    height: 5vh;
+}
+
+
+
+
+
+/* ------------------ ANIMATION ------------------ */
 
 
 .star1 {
-  animation: 3s linear 1s infinite alternate twinkle;
+    animation: 3s linear 1s infinite alternate twinkle;
 }
 
 .star2 {
-  animation: 4s linear 0s infinite alternate twinkle;
+    animation: 4s linear 0s infinite alternate twinkle;
 }
 
 .star3 {
-  animation: 3.5s linear 0.5s infinite alternate twinkle;
+    animation: 3.5s linear 0.5s infinite alternate twinkle;
 }
 
 .star4 {
@@ -56,9 +132,11 @@ header {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
