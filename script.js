@@ -21,7 +21,7 @@ function darkModeToggle()
     {
         despawnStars()
         sessionStorage.setItem("darkMode", "false")
-        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #320707";
+        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #000000";
     }
 }
 
@@ -84,7 +84,7 @@ function setColors()
     }
     else
     {
-        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #320707";
+        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #000000";
     }
 }
 

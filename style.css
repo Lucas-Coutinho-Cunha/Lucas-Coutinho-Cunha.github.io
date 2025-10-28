@@ -33,6 +33,7 @@ header {
     text-decoration: none;
 }
 
+
 .nav-icon {
     height: 64px;
 }
@@ -83,7 +84,24 @@ header {
     padding-right: 5vh;
 }
 
+.text-title {
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.text-block {
+    line-height: 28px;
+    text-align: justify;
+    padding-left: 5vw;
+    width: 70vw;
+}
+
+a {
+    text-decoration: none;
+}
+
 .content-img {
+    height: 256px;
     width: 256px;
 }
 
