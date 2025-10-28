@@ -77,14 +77,14 @@ for (let i = 0; i < 150; i++) {
 
 function setColors()
 {
-    if (sessionStorage.getItem("darkMode") == "true")
+    if (sessionStorage.getItem("darkMode") == "false")
     {
-        document.documentElement.style.cssText = "--sky-dark: #05092a; --sky-bright: #1d325f; --font-color: #fff6ac";
-        spawnStars()
+        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #000000";
     }
     else
     {
-        document.documentElement.style.cssText = "--sky-dark: #8bb6c8; --sky-bright: #d7ebf3; --font-color: #000000";
+        document.documentElement.style.cssText = "--sky-dark: #05092a; --sky-bright: #1d325f; --font-color: #fff6ac";
+        spawnStars()        
     }
 }
 
