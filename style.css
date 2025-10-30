@@ -45,6 +45,7 @@ header {
     width: 120px;
     height: 60px;
     margin-right: 100px;
+    cursor: pointer;
 }
 
 .sky {
